@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Runner {
@@ -10,7 +8,8 @@ public class Runner {
      Scanner scan = new Scanner(System.in);
      System.out.println("Welcome to the Magic 8 Ball!");
      System.out.print("Enter a yes-no question and I will answer it: ");
-     String question = scan.nextLine();
+     @SuppressWarnings("unused")
+    String question = scan.nextLine();
      // Write a little program here to randomly choose
      // one of six responses to the user's yes-no question!
      ArrayList<String> tList = new ArrayList<String>();
@@ -27,5 +26,6 @@ public class Runner {
      }else{
       System.out.println(fList.get((int)(Math.random() * (3 - 1) + 1)));
      }
+     scan.close();
    }
 }
