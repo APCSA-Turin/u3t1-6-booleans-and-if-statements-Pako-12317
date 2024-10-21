@@ -29,5 +29,14 @@ public class SelectionMadness {
        return Collections.max(lrg);
     }
   
+    public boolean rightTriangle(int side1, int side2, int side3) {
+      ArrayList<Integer> rtri = new ArrayList<Integer>();
+      rtri.add(side1);
+      rtri.add(side2);
+      rtri.add(side3);
+      Collections.sort(rtri);
+      return Math.pow(rtri.get(0),2)+Math.pow(rtri.get(1),2)==Math.pow(rtri.get(2),2);
+    }
+  
   }
   
