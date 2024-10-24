@@ -13,6 +13,7 @@ public class NumberInsanity {
        int num = myScanner.nextInt();
        String msg = result(num); // call helper method and store result 
        System.out.println(msg);
+       myScanner.close();
    }
 
 
